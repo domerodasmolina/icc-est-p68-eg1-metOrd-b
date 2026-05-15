@@ -4,6 +4,8 @@ import models.Movie;
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("=== Evaluación: Ordenamiento de Películas por Título ===\n");
+        System.out.println("Lista sin ordenar:");
+
         // imirpimir la lista de películas sin ordenar
         // ordenar la lista de películas por título utilizando el método sortByTitle del
         // MovieController
@@ -17,6 +19,7 @@ public class App {
      * 
      * @return Array de películas sin ordenar
      */
+        
     public static Movie[] generateMoviesList() {
         Movie[] movies = new Movie[25];
         movies[0] = new Movie("Inception", 2010);
@@ -46,5 +49,6 @@ public class App {
         movies[24] = new Movie("Iron Man", 2008);
         return movies;
     }
+
 
 }
